@@ -39,5 +39,31 @@ import "../styles/global.css";
     </section>
     <Lightbox />
     <Footer />
+    <script is:inline>
+      const setupImageSkeletons = () => {
+        const images = document.querySelectorAll(".img-skeleton img");
+        images.forEach((img) => {
+          const container = img.closest(".img-skeleton");
+          if (!container) return;
+
+          const markLoaded = () => {
+            container.classList.add("img-loaded");
+          };
+
+          if (img.complete && img.naturalWidth > 0) {
+            markLoaded();
+          } else {
+            img.addEventListener("load", markLoaded);
+            img.addEventListener("error", markLoaded);
+          }
+        });
+      };
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", setupImageSkeletons);
+      } else {
+        setupImageSkeletons();
+      }
+    </script>
   </body>
 </html>

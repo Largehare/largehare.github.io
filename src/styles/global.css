@@ -3,3 +3,39 @@
 body {
   font-family: 'IBM Plex Mono', monospace;
 }
+
+.img-skeleton {
+  position: relative;
+  overflow: hidden;
+  background-color: #f3f4f6;
+}
+
+.img-skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.7), transparent);
+  transform: translateX(-100%);
+  animation: img-shimmer 1.4s infinite;
+  pointer-events: none;
+}
+
+.img-skeleton img {
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.img-skeleton.img-loaded::after {
+  animation: none;
+  opacity: 0;
+}
+
+.img-skeleton.img-loaded img {
+  opacity: 1;
+}
+
+@keyframes img-shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
