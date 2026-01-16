@@ -5,6 +5,7 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
 const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 const hasPublications = siteConfig.publications && siteConfig.publications.length > 0;
 const hasEducation = siteConfig.education && siteConfig.education.length > 0;
+const hasReferees = siteConfig.referees && siteConfig.referees.length > 0;
 ---
 
 <header
@@ -65,6 +66,18 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
               class="text-gray-700 hover:text-black transition-colors font-medium"
             >
               Education
+            </a>
+          </li>
+        )
+      }
+      {
+        hasReferees && (
+          <li>
+            <a
+              href="#referees"
+              class="text-gray-700 hover:text-black transition-colors font-medium"
+            >
+              Referees
             </a>
           </li>
         )

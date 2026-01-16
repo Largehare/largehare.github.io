@@ -5,6 +5,7 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
 const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 const hasPublications = siteConfig.publications && siteConfig.publications.length > 0;
 const hasEducation = siteConfig.education && siteConfig.education.length > 0;
+const hasReferees = siteConfig.referees && siteConfig.referees.length > 0;
 ---
 
 <footer class="relative bg-gray-50 border-t border-gray-200">
@@ -176,6 +177,16 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
                 class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
               >
                 Education
+              </a>
+            )
+          }
+          {
+            hasReferees && (
+              <a
+                href="#referees"
+                class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
+              >
+                Referees
               </a>
             )
           }

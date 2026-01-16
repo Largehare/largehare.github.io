@@ -44,7 +44,8 @@ export const siteConfig = {
       company: "Multimodal Art Projection Research Community",
       title: "Research Assistant",
       dateRange: "Sep 2023 - Jan 2024",
-      linkNote: "Please refer to publications section",
+      // linkNote: "Please refer to publications section",
+      link: "https://arxiv.org/abs/2403.16331",
       bullets: [
         "Implemented data-testing metrics for Deep Learning models in audio processing.",
         "Designed and distributed survey questionnaires to collect subjective data.",
@@ -107,7 +108,7 @@ export const siteConfig = {
       dateRange: "2024 - 2026",
       achievements: [
         "Weighted Average Mark (WAM): 84.6/100",
-        "Specialized in Neural Networks, Machine Learning, and Computer Vision",
+        "Specialized in Deep Learning, Machine Learning and NLP",
       ],
     },
     {
@@ -119,6 +120,18 @@ export const siteConfig = {
         "National Scholarship",
         "Selected for 15th National College Students Innovation & Entrepreneurship Annual Conference (Top 0.1%)",
       ],
+    },
+  ],
+  referees: [
+    {
+      name: "Dr. Aditya Joshi",
+      affiliation: "University of New South Wales",
+      email: "aditya.joshi@unsw.edu.au",
+    },
+    {
+      name: "Dr. Xiang Dai",
+      affiliation: "CSIRO Data61",
+      email: "dai.xiang.au@gmail.com",
     },
   ],
 };
