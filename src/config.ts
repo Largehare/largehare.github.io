@@ -23,6 +23,7 @@ export const siteConfig = {
     "Docker",
     "Kubernetes",
     "PostgreSQL",
+    "..."
   ],
 
   experience: [
@@ -88,7 +89,7 @@ export const siteConfig = {
       authors: "Fan Zhang; Gang Cheng (Rexin); Keyi Wang; Yang Liu; Fengquan Zhang; Qiang Fu",
       venue: "China Virtual Reality Conference (ChinaVR), 2022",
       link: "https://www.aconf.cn/conf_183281/abstract/35.html",
-      images: ["pubs/img1.jpg", "pubs/img2.jpg", "pubs/img3.jpg"],
+      // images: ["pubs/img1.jpg", "pubs/img2.jpg", "pubs/img3.jpg"],
     },
   ],
   education: [

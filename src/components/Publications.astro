@@ -21,17 +21,9 @@ const hasPublications = siteConfig.publications && siteConfig.publications.lengt
           <div class="lg:col-span-8">
             <div class="space-y-6">
               {siteConfig.publications.map((pub) => {
-                const Component = pub.link ? "a" : "div";
-                const linkProps = pub.link
-                  ? { href: pub.link, target: "_blank", rel: "noopener noreferrer" }
-                  : {};
-
                 return (
-                  <Component
-                    {...linkProps}
-                    class={`block p-4 sm:p-5 md:p-6 bg-gray-50 rounded-xl border border-gray-200 transition-all duration-300 ${
-                      pub.link ? "hover:bg-white hover:shadow-lg hover:border-gray-300 hover:-translate-y-0.5" : ""
-                    }`}
+                  <div
+                    class="block p-4 sm:p-5 md:p-6 bg-gray-50 rounded-xl border border-gray-200 transition-all duration-300 hover:bg-white hover:shadow-lg hover:border-gray-300"
                   >
                     <div class="space-y-2">
                       <h3 class="text-lg sm:text-xl font-semibold text-gray-900">
@@ -64,8 +56,34 @@ const hasPublications = siteConfig.publications && siteConfig.publications.lengt
                           ))}
                         </div>
                       )}
+
+                      {pub.link && (
+                        <div class="mt-4 flex justify-end">
+                          <a
+                            href={pub.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg transition-colors duration-200 hover:bg-gray-700"
+                          >
+                            <span>View</span>
+                            <svg
+                              class="w-4 h-4"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M7 17L17 7M17 7H7M17 7V17"
+                              />
+                            </svg>
+                          </a>
+                        </div>
+                      )}
                     </div>
-                  </Component>
+                  </div>
                 );
               })}
             </div>
