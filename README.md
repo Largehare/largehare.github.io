@@ -28,18 +28,18 @@ I am a software engineer specializing in Full-stack development and Artificial I
 
 ### 📈 GitHub Statistics
 
-![Rexin's GitHub stats](https://github-readme-stats.vercel.app/api?username=Largehare&show_icons=true&theme=transparent)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Largehare&layout=compact&theme=transparent)
+![Rexin's GitHub stats](https://github-readme-stats-five-xi-34.vercel.app/api?username=Largehare&show_icons=true&theme=transparent)
+![Top Langs](https://github-readme-stats-five-xi-34.vercel.app/api/top-langs/?username=Largehare&layout=compact&theme=transparent)
 
 ---
 
-### 📂 Featured Project: Linking Adverse Drug Events using LLMs
+<!-- ### 📂 Featured Project: Linking Adverse Drug Events using LLMs
 *Research Initiative at UNSW Sydney*
 * **Goal:** Automate the linking of Adverse Drug Events (ADEs) to MedDRA concepts using Large Language Models.
 * **Tech:** Python, LLM APIs, DSPy, SapBERT.
 * **Outcome:** Developed a multi-domain benchmark and a rewrite-then-retrieve pipeline, generating 75k synthetic training pairs.
 
----
+--- -->
 
 ### 📫 Connect with me
 * **LinkedIn:** [linkedin.com/in/rexin-cheng](https://www.linkedin.com/in/rexin-cheng)
