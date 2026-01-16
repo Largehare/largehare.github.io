@@ -42,9 +42,11 @@ const hasPublications = siteConfig.publications && siteConfig.publications.lengt
                       {pub.images && pub.images.length > 0 && (
                         <div class="mt-4 grid grid-cols-3 gap-3 sm:gap-4">
                           {pub.images.slice(0, 3).map((img, imgIdx) => (
-                            <div
-                              class="relative aspect-[4/3] overflow-hidden rounded-md border border-gray-200 bg-gray-100"
-                              aria-hidden="true"
+                            <button
+                              type="button"
+                              class="relative aspect-[4/3] overflow-hidden rounded-md border border-gray-200 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
+                              aria-label={`${pub.title} image ${imgIdx + 1}`}
+                              data-lightbox-img={`/${img}`}
                             >
                               <img
                                 src={`/${img}`}
@@ -52,7 +54,7 @@ const hasPublications = siteConfig.publications && siteConfig.publications.lengt
                                 class="h-full w-full object-cover"
                                 loading="lazy"
                               />
-                            </div>
+                            </button>
                           ))}
                         </div>
                       )}

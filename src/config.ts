@@ -37,6 +37,7 @@ export const siteConfig = {
         "Engineered scalable backend systems handling Stripe payments and real-time data.",
         "Established automated CI/CD pipelines with Helm, reducing deployment time by about 50%.",
       ],
+      images: ["experience/mise1.png", "experience/mise2.png", "experience/mise3.png"],
     },
     {
       company: "Multimodal Art Projection Research Community",
@@ -57,6 +58,7 @@ export const siteConfig = {
         "Automated parameter adjustments for an audio equalizer using TensorFlow and Python.",
         "Collaborated with cross-functional teams to streamline testing and visualize performance metrics.",
       ],
+      images: ["experience/my-didi.jpeg", "experience/didi1.jpeg" , "experience/didi2.jpeg" ],
     },
   ],
 
@@ -67,6 +69,7 @@ export const siteConfig = {
         "Developed a multi-domain benchmark for ADE corpora and architected a rewrite-then-retrieve pipeline combining LLM-based mention normalization with embedding-based retrieval.",
       link: "https://github.com/Largehare", // Placeholder link
       skills: ["LLMs", "DSPy", "NLP", "Python", "SapBERT"],
+      images: ["projects/LLM1.png"],
     },
     {
       name: "Metaverse Holographic AI Partner",
@@ -74,6 +77,7 @@ export const siteConfig = {
         "Led a team to develop a holographic AI app using Unity and Python. Gained rating as a 'national project' and chosen among the top 0.1% of projects at BUPT.",
       link: "https://github.com/Largehare", // Placeholder link
       skills: ["Unity", "C#", "Python", "Computer Vision"],
+      images: ["projects/metaverse1.jpg"],
     },
   ],
   publications: [

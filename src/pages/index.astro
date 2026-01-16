@@ -36,6 +36,71 @@ import "../styles/global.css";
       <Publications />
       <Education />
     </section>
+    <div
+      id="lightbox"
+      class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 backdrop-blur-sm p-4"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="relative max-w-5xl w-full">
+        <button
+          type="button"
+          class="absolute -top-3 -right-3 bg-white text-gray-700 rounded-full shadow p-2 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+          aria-label="Close image"
+          data-lightbox-close
+        >
+          ×
+        </button>
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <img
+            id="lightbox-img"
+            src=""
+            alt="Full image"
+            class="w-full h-full object-contain max-h-[85vh] bg-black"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+
+      document.addEventListener("click", (event) => {
+        const thumb = event.target.closest("[data-lightbox-img]");
+        if (thumb) {
+          event.preventDefault();
+          const src = thumb.getAttribute("data-lightbox-img") || "";
+          if (src && lightbox && lightboxImg) {
+            lightboxImg.src = src;
+            lightbox.classList.remove("hidden");
+            lightbox.classList.add("flex");
+          }
+        }
+
+        if (
+          lightbox &&
+          !lightbox.classList.contains("hidden") &&
+          (event.target === lightbox || event.target.hasAttribute("data-lightbox-close"))
+        ) {
+          lightbox.classList.add("hidden");
+          lightbox.classList.remove("flex");
+          if (lightboxImg) {
+            lightboxImg.src = "";
+          }
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && lightbox && !lightbox.classList.contains("hidden")) {
+          lightbox.classList.add("hidden");
+          lightbox.classList.remove("flex");
+          if (lightboxImg) {
+            lightboxImg.src = "";
+          }
+        }
+      });
+    </script>
     <Footer />
   </body>
 </html>
