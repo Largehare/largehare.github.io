@@ -79,7 +79,7 @@ export const siteConfig = {
       description:
         "Led a team to develop a holographic AI app using Unity and Python. Gained rating as a 'national project' and chosen among the top 0.1% of projects at BUPT.",
       skills: ["Unity", "C#", "Python", "Computer Vision"],
-      images: ["projects/metaverse1.jpg"],
+      images: ["projects/metaverse1.jpg", "projects/metaverse2.jpg", "projects/metaverse3.png"],
       linkNote: "Internal codebase",
     },
   ],
