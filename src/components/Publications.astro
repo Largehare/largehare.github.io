@@ -1,0 +1,102 @@
+---
+import { siteConfig } from "../config";
+const hasPublications = siteConfig.publications && siteConfig.publications.length > 0;
+---
+
+{
+  hasPublications && (
+    <section id="publications" class="p-8 sm:p-12 md:p-16 lg:p-24">
+      <div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+          <div class="lg:col-span-4">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900 leading-tight break-words">
+              Pubs
+            </h2>
+            <div
+              class="w-[75px] h-[5px] mt-2 rounded-full"
+              style={`background-color: ${siteConfig.accentColor}`}
+            />
+          </div>
+
+          <div class="lg:col-span-8">
+            <div class="space-y-6">
+              {siteConfig.publications.map((pub) => {
+                return (
+                  <div
+                    class="block p-4 sm:p-5 md:p-6 bg-gray-50 rounded-xl border border-gray-200 transition-all duration-300 hover:bg-white hover:shadow-lg hover:border-gray-300"
+                  >
+                    <div class="space-y-2">
+                      <h3 class="text-lg sm:text-xl font-semibold text-gray-900">
+                        {pub.title}
+                      </h3>
+                      {pub.authors && (
+                        <p class="text-sm sm:text-base text-gray-600">
+                          {pub.authors}
+                        </p>
+                      )}
+                      {pub.venue && (
+                        <p class="text-sm sm:text-base text-gray-500">
+                          {pub.venue}
+                        </p>
+                      )}
+                      {pub.images && pub.images.length > 0 && (
+                        <div class="mt-4 grid grid-cols-3 gap-3 sm:gap-4">
+                          {pub.images.slice(0, 3).map((img, imgIdx) => (
+                            <button
+                              type="button"
+                              class="relative aspect-[4/3] overflow-hidden rounded-md border border-gray-200 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
+                              aria-label={`${pub.title} image ${imgIdx + 1}`}
+                              data-lightbox-img={`/${img}`}
+                            >
+                              <img
+                                src={`/${img}`}
+                                alt={`${pub.title} image ${imgIdx + 1}`}
+                                class="h-full w-full object-cover"
+                                loading="lazy"
+                              />
+                            </button>
+                          ))}
+                        </div>
+                      )}
+
+                      {pub.link ? (
+                        <div class="mt-4 flex justify-end">
+                          <a
+                            href={pub.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg transition-colors duration-200 hover:bg-gray-700"
+                          >
+                            <span>View</span>
+                            <svg
+                              class="w-4 h-4"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M7 17L17 7M17 7H7M17 7V17"
+                              />
+                            </svg>
+                          </a>
+                        </div>
+                      ) : (
+                        <div class="mt-4 flex justify-end">
+                          <span class="text-sm text-gray-500">{pub.linkNote || siteConfig.linkUnavailableText}</span>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+

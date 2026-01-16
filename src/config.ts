@@ -3,10 +3,10 @@ export const siteConfig = {
   title: "AI Researcher & Full Stack Engineer",
   description: "Master of IT Graduate (UNSW) and Software Engineer with 3 years of experience across AI research and commercial development.",
   accentColor: "#1d4ed8",
+  linkUnavailableText: "Not available (NDA)",
   social: {
     email: "rexincheng@outlook.com",
     linkedin: "https://www.linkedin.com/in/rexin-cheng",
-    twitter: "https://x.com/rexin_cheng", // Placeholder or from your common handle if known, or can be removed
     github: "https://github.com/Largehare",
   },
   aboutMe:
@@ -24,23 +24,9 @@ export const siteConfig = {
     "Docker",
     "Kubernetes",
     "PostgreSQL",
+    "..."
   ],
-  projects: [
-    {
-      name: "Linking Adverse Drug Events using LLMs",
-      description:
-        "Developed a multi-domain benchmark for ADE corpora and architected a rewrite-then-retrieve pipeline combining LLM-based mention normalization with embedding-based retrieval.",
-      link: "https://github.com/Largehare", // Placeholder link
-      skills: ["LLMs", "DSPy", "NLP", "Python", "SapBERT"],
-    },
-    {
-      name: "Metaverse Holographic AI Partner",
-      description:
-        "Led a team to develop a holographic AI app using Unity and Python. Gained rating as a 'national project' and chosen among the top 0.1% of projects at BUPT.",
-      link: "https://github.com/Largehare", // Placeholder link
-      skills: ["Unity", "C#", "Python", "Computer Vision"],
-    },
-  ],
+
   experience: [
     {
       company: "MISE SYSTEMS PTY LTD",
@@ -52,11 +38,13 @@ export const siteConfig = {
         "Engineered scalable backend systems handling Stripe payments and real-time data.",
         "Established automated CI/CD pipelines with Helm, reducing deployment time by about 50%.",
       ],
+      images: ["experience/mise1.png", "experience/mise2.png", "experience/mise3.png"],
     },
     {
       company: "Multimodal Art Projection Research Community",
       title: "Research Assistant",
       dateRange: "Sep 2023 - Jan 2024",
+      linkNote: "Please refer to publications section",
       bullets: [
         "Implemented data-testing metrics for Deep Learning models in audio processing.",
         "Designed and distributed survey questionnaires to collect subjective data.",
@@ -72,6 +60,44 @@ export const siteConfig = {
         "Automated parameter adjustments for an audio equalizer using TensorFlow and Python.",
         "Collaborated with cross-functional teams to streamline testing and visualize performance metrics.",
       ],
+      images: ["experience/my-didi.jpeg", "experience/didi1.jpeg" , "experience/didi2.jpeg" ],
+    },
+  ],
+
+  projects: [
+    {
+      name: "Linking Adverse Drug Events using LLMs",
+      description:
+        "Developed a multi-domain benchmark for ADE corpora and architected a rewrite-then-retrieve pipeline combining LLM-based mention normalization with embedding-based retrieval.",
+      // link: "https://github.com/Largehare", // Placeholder link
+      skills: ["LLMs", "DSPy", "NLP", "Python", "SapBERT"],
+      images: ["projects/LLM1.png"],
+      linkNote: "Internal research,  release pending",
+    },
+    {
+      name: "Metaverse Holographic AI Partner",
+      description:
+        "Led a team to develop a holographic AI app using Unity and Python. Gained rating as a 'national project' and chosen among the top 0.1% of projects at BUPT.",
+      skills: ["Unity", "C#", "Python", "Computer Vision"],
+      images: ["projects/metaverse1.jpg", "projects/metaverse2.jpg", "projects/metaverse3.png"],
+      linkNote: "Internal codebase",
+    },
+  ],
+  publications: [
+    {
+      title: "Modeling Analog Dynamic Range Compressors using Deep Learning and State-space Models",
+      authors: "Yin, H.; Cheng, G. (Rexin); Steinmetz, C.J.; Yuan, R.; Stern, R.M.; Dannenberg, R.B.",
+      venue: "arXiv, 2024",
+      link: "https://arxiv.org/abs/2403.16331",
+      images: ["pubs/model.png", "pubs/speed-ratio.png", "pubs/subjective.png"],
+    },
+    {
+      title: "Example-Driven Movable Structure Transfer of 3D Models",
+      authors: "Fan Zhang; Gang Cheng (Rexin); Keyi Wang; Yang Liu; Fengquan Zhang; Qiang Fu",
+      venue: "China Virtual Reality Conference (ChinaVR), 2022",
+      link: "https://www.aconf.cn/conf_183281/abstract/35.html",
+      // images: ["pubs/img1.jpg", "pubs/img2.jpg", "pubs/img3.jpg"],
+      // linkNote: "Conference proceedings link only",
     },
   ],
   education: [
