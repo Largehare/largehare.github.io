@@ -6,7 +6,6 @@ export const siteConfig = {
   social: {
     email: "rexincheng@outlook.com",
     linkedin: "https://www.linkedin.com/in/rexin-cheng",
-    twitter: "https://x.com/rexin_cheng", // Placeholder or from your common handle if known, or can be removed
     github: "https://github.com/Largehare",
   },
   aboutMe:
@@ -25,22 +24,7 @@ export const siteConfig = {
     "Kubernetes",
     "PostgreSQL",
   ],
-  projects: [
-    {
-      name: "Linking Adverse Drug Events using LLMs",
-      description:
-        "Developed a multi-domain benchmark for ADE corpora and architected a rewrite-then-retrieve pipeline combining LLM-based mention normalization with embedding-based retrieval.",
-      link: "https://github.com/Largehare", // Placeholder link
-      skills: ["LLMs", "DSPy", "NLP", "Python", "SapBERT"],
-    },
-    {
-      name: "Metaverse Holographic AI Partner",
-      description:
-        "Led a team to develop a holographic AI app using Unity and Python. Gained rating as a 'national project' and chosen among the top 0.1% of projects at BUPT.",
-      link: "https://github.com/Largehare", // Placeholder link
-      skills: ["Unity", "C#", "Python", "Computer Vision"],
-    },
-  ],
+ 
   experience: [
     {
       company: "MISE SYSTEMS PTY LTD",
@@ -72,6 +56,23 @@ export const siteConfig = {
         "Automated parameter adjustments for an audio equalizer using TensorFlow and Python.",
         "Collaborated with cross-functional teams to streamline testing and visualize performance metrics.",
       ],
+    },
+  ],
+
+   projects: [
+    {
+      name: "Linking Adverse Drug Events using LLMs",
+      description:
+        "Developed a multi-domain benchmark for ADE corpora and architected a rewrite-then-retrieve pipeline combining LLM-based mention normalization with embedding-based retrieval.",
+      link: "https://github.com/Largehare", // Placeholder link
+      skills: ["LLMs", "DSPy", "NLP", "Python", "SapBERT"],
+    },
+    {
+      name: "Metaverse Holographic AI Partner",
+      description:
+        "Led a team to develop a holographic AI app using Unity and Python. Gained rating as a 'national project' and chosen among the top 0.1% of projects at BUPT.",
+      link: "https://github.com/Largehare", // Placeholder link
+      skills: ["Unity", "C#", "Python", "Computer Vision"],
     },
   ],
   education: [
