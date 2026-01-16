@@ -78,7 +78,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                           </div>
                         )}
 
-                        {project.link && (
+                        {project.link ? (
                           <div class="mt-4 flex justify-end">
                             <a
                               href={project.link}
@@ -101,6 +101,10 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                                 />
                               </svg>
                             </a>
+                          </div>
+                        ) : (
+                          <div class="mt-4 flex justify-end">
+                            <span class="text-sm text-gray-500">{project.linkNote || siteConfig.linkUnavailableText}</span>
                           </div>
                         )}
                       </div>

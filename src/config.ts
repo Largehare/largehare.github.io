@@ -3,6 +3,7 @@ export const siteConfig = {
   title: "AI Researcher & Full Stack Engineer",
   description: "Master of IT Graduate (UNSW) and Software Engineer with 3 years of experience across AI research and commercial development.",
   accentColor: "#1d4ed8",
+  linkUnavailableText: "Not available (NDA)",
   social: {
     email: "rexincheng@outlook.com",
     linkedin: "https://www.linkedin.com/in/rexin-cheng",
@@ -43,6 +44,7 @@ export const siteConfig = {
       company: "Multimodal Art Projection Research Community",
       title: "Research Assistant",
       dateRange: "Sep 2023 - Jan 2024",
+      linkNote: "Please refer to publications section",
       bullets: [
         "Implemented data-testing metrics for Deep Learning models in audio processing.",
         "Designed and distributed survey questionnaires to collect subjective data.",
@@ -67,17 +69,18 @@ export const siteConfig = {
       name: "Linking Adverse Drug Events using LLMs",
       description:
         "Developed a multi-domain benchmark for ADE corpora and architected a rewrite-then-retrieve pipeline combining LLM-based mention normalization with embedding-based retrieval.",
-      link: "https://github.com/Largehare", // Placeholder link
+      // link: "https://github.com/Largehare", // Placeholder link
       skills: ["LLMs", "DSPy", "NLP", "Python", "SapBERT"],
       images: ["projects/LLM1.png"],
+      linkNote: "Internal research,  release pending",
     },
     {
       name: "Metaverse Holographic AI Partner",
       description:
         "Led a team to develop a holographic AI app using Unity and Python. Gained rating as a 'national project' and chosen among the top 0.1% of projects at BUPT.",
-      link: "https://github.com/Largehare", // Placeholder link
       skills: ["Unity", "C#", "Python", "Computer Vision"],
       images: ["projects/metaverse1.jpg"],
+      linkNote: "Internal codebase",
     },
   ],
   publications: [
@@ -94,6 +97,7 @@ export const siteConfig = {
       venue: "China Virtual Reality Conference (ChinaVR), 2022",
       link: "https://www.aconf.cn/conf_183281/abstract/35.html",
       // images: ["pubs/img1.jpg", "pubs/img2.jpg", "pubs/img3.jpg"],
+      // linkNote: "Conference proceedings link only",
     },
   ],
   education: [

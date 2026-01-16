@@ -59,7 +59,7 @@ const hasPublications = siteConfig.publications && siteConfig.publications.lengt
                         </div>
                       )}
 
-                      {pub.link && (
+                      {pub.link ? (
                         <div class="mt-4 flex justify-end">
                           <a
                             href={pub.link}
@@ -82,6 +82,10 @@ const hasPublications = siteConfig.publications && siteConfig.publications.lengt
                               />
                             </svg>
                           </a>
+                        </div>
+                      ) : (
+                        <div class="mt-4 flex justify-end">
+                          <span class="text-sm text-gray-500">{pub.linkNote || siteConfig.linkUnavailableText}</span>
                         </div>
                       )}
                     </div>
