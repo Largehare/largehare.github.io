@@ -90,6 +90,23 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                             ))}
                           </div>
                         )}
+                        {project.images && project.images.length > 0 && (
+                          <div class="mt-5 grid grid-cols-3 gap-3 sm:gap-4">
+                            {project.images.slice(0, 3).map((img, imgIdx) => (
+                              <div
+                                class="relative aspect-[4/3] overflow-hidden rounded-lg border border-gray-200 bg-gray-100"
+                                aria-hidden="true"
+                              >
+                                <img
+                                  src={`/${img}`}
+                                  alt={`${project.name} image ${imgIdx + 1}`}
+                                  class="h-full w-full object-cover"
+                                  loading="lazy"
+                                />
+                              </div>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     </Component>
                   </div>

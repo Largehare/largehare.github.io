@@ -24,7 +24,7 @@ export const siteConfig = {
     "Kubernetes",
     "PostgreSQL",
   ],
- 
+
   experience: [
     {
       company: "MISE SYSTEMS PTY LTD",
@@ -59,7 +59,7 @@ export const siteConfig = {
     },
   ],
 
-   projects: [
+  projects: [
     {
       name: "Linking Adverse Drug Events using LLMs",
       description:
@@ -73,6 +73,22 @@ export const siteConfig = {
         "Led a team to develop a holographic AI app using Unity and Python. Gained rating as a 'national project' and chosen among the top 0.1% of projects at BUPT.",
       link: "https://github.com/Largehare", // Placeholder link
       skills: ["Unity", "C#", "Python", "Computer Vision"],
+    },
+  ],
+  publications: [
+    {
+      title: "Modeling Analog Dynamic Range Compressors using Deep Learning and State-space Models",
+      authors: "Yin, H.; Cheng, G. (Rexin); Steinmetz, C.J.; Yuan, R.; Stern, R.M.; Dannenberg, R.B.",
+      venue: "arXiv, 2024",
+      link: "https://arxiv.org/abs/2403.16331",
+      images: ["pubs/model.png", "pubs/speed-ratio.png", "pubs/subjective.png"],
+    },
+    {
+      title: "Example-Driven Movable Structure Transfer of 3D Models",
+      authors: "Fan Zhang; Gang Cheng (Rexin); Keyi Wang; Yang Liu; Fengquan Zhang; Qiang Fu",
+      venue: "China Virtual Reality Conference (ChinaVR), 2022",
+      link: "https://www.aconf.cn/conf_183281/abstract/35.html",
+      images: ["pubs/img1.jpg", "pubs/img2.jpg", "pubs/img3.jpg"],
     },
   ],
   education: [
