@@ -39,11 +39,32 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                           </h3>
                         </div>
 
-                        <p
-                          class={`text-base sm:text-lg text-gray-600 leading-relaxed ${project.link ? "pr-12 sm:pr-14 md:pr-16" : ""}`}
-                        >
-                          {project.description}
-                        </p>
+                        {project.descriptionParagraphs ? (
+                          <div
+                            class={`space-y-3 text-base sm:text-lg text-gray-600 leading-relaxed ${project.link ? "pr-12 sm:pr-14 md:pr-16" : ""}`}
+                          >
+                            {project.descriptionParagraphs.map((paragraph) => (
+                              <p set:html={paragraph} />
+                            ))}
+                          </div>
+                        ) : project.descriptionBullets ? (
+                          <ul
+                            class={`space-y-2 text-base sm:text-lg text-gray-600 leading-relaxed ${project.link ? "pr-12 sm:pr-14 md:pr-16" : ""}`}
+                          >
+                            {project.descriptionBullets.map((bullet) => (
+                              <li class="flex items-start">
+                                <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0" />
+                                <span set:html={bullet} />
+                              </li>
+                            ))}
+                          </ul>
+                        ) : (
+                          <p
+                            class={`text-base sm:text-lg text-gray-600 leading-relaxed ${project.link ? "pr-12 sm:pr-14 md:pr-16" : ""}`}
+                          >
+                            {project.description}
+                          </p>
+                        )}
 
                         {project.skills && project.skills.length > 0 && (
                           <div class="flex flex-wrap gap-1.5 sm:gap-2 pt-2">
@@ -63,7 +84,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                             {project.images.slice(0, 3).map((img, imgIdx) => (
                               <button
                                 type="button"
-                                class="relative aspect-[4/3] overflow-hidden rounded-lg border border-gray-200 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
+                                class="img-skeleton relative aspect-[4/3] overflow-hidden rounded-lg border border-gray-200 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
                                 aria-label={`${project.name} image ${imgIdx + 1}`}
                                 data-lightbox-img={`/${img}`}
                               >

@@ -49,6 +49,11 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
                       </li>
                     ))}
                   </ul>
+                  {edu.description && (
+                    <p class="mt-3 text-sm sm:text-base text-gray-600">
+                      {edu.description}
+                    </p>
+                  )}
                 </div>
               ))}
             </div>

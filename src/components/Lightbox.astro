@@ -15,7 +15,7 @@
     >
       ×
     </button>
-    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+    <div class="img-skeleton bg-white rounded-xl shadow-lg overflow-hidden">
       <img
         id="lightbox-img"
         src=""
@@ -36,6 +36,10 @@
       event.preventDefault();
       const src = thumb.getAttribute("data-lightbox-img") || "";
       if (src && lightbox && lightboxImg) {
+        const container = lightboxImg.closest(".img-skeleton");
+        if (container) {
+          container.classList.remove("img-loaded");
+        }
         lightboxImg.src = src;
         lightbox.classList.remove("hidden");
         lightbox.classList.add("flex");
