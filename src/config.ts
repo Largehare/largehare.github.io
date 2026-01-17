@@ -59,9 +59,9 @@ export const siteConfig = {
       title: "Algorithm Engineer",
       dateRange: "Mar 2023 - Oct 2023",
       description: [
-        "Analyzed occupant detection data using Deep Learning to improve accuracy by 10%.",
-        "Automated parameter adjustments for an audio equalizer using TensorFlow and Python.",
-        "Collaborated with cross-functional teams to streamline testing and visualize performance metrics.",
+        "Worked in automotive audio & AI to improve in-cabin acoustics and <strong>occupant monitoring</strong> under challenging vehicle conditions. ",
+        "Built a differentiable <strong>deep-learning equalization</strong> pipeline (TensorFlow/Python) to optimize IIR filters, and developed STFT-based <strong>occupant detection & localization</strong> with clustering for seat/zone estimation.",
+        "Delivered <strong>+10% occupancy accuracy</strong> and near-flat response in test cabins, contributing to a <strong>patent audio framework</strong> and smoother cross-team validation.",
       ],
       images: ["experience/my-didi.jpeg", "experience/didi1.jpeg" , "experience/didi2.jpeg" ],
     },
@@ -69,17 +69,19 @@ export const siteConfig = {
 
   projects: [
     {
-      name: "Linking Adverse Drug Events using LLMs",
-      description:
-        "Developed a multi-domain benchmark for ADE corpora and architected a rewrite-then-retrieve pipeline combining LLM-based mention normalization with embedding-based retrieval.",
-      // link: "https://github.com/Largehare", // Placeholder link
+      name: "On the Role of LLM Rewriting and Synthetic Data Generation in Cross-Domain Adverse Drug Event Linking",
+      description: [
+        "As lead researcher, I aimed to improve cross-domain robustness in mapping informal ADE mentions to <strong>MedDRA</strong>, comparing <strong>rewrite-then-retrieve</strong> inference with synthetic-data fine-tuning.",
+        "Built a multi-domain benchmark by unifying CADEC, TAC-2017, and PsyTAR; designed a Llama-3-Med42 + SapBERT rewrite-then-retrieve pipeline; optimized prompts with <strong>DSPy</strong>; generated <strong>75k synthetic pairs</strong> with GPT-4/Llama-3.",
+        "Achieved best overall performance with <strong>54.7% Acc@1</strong> using a 1:3 human-to-synthetic mix; found inference-time rewriting harms accuracy (granularity drift/type shift), validating training-time augmentation.",
+      ],
       skills: ["LLMs", "DSPy", "NLP", "Python", "SapBERT"],
       images: ["projects/LLM1.png"],
       linkNote: "Internal research,  release pending",
     },
     {
       name: "Metaverse Holographic AI Partner",
-      descriptionParagraphs: [
+      description: [
         "Developed a cross-platform holographic <strong>AI Partner</strong> to address the lack of emotional companionship in existing AI products by integrating 3D rendering with intelligent human-computer interaction. Served as the <strong>Software Development Lead</strong> at Beijing University of Posts and Telecommunications.",
         "<strong>Unity System Integration</strong> and <strong>Real-time Action Recognition</strong>: built core modules (AI dressing system, motion-capture rhythm games) for Android/Web, and implemented a high-accuracy engine using <strong>BlazePose + EfficientGCN</strong>, enabling <strong>CPU-side</strong> real-time detection of <strong>20+ daily gestures</strong>. Integrated <strong>JD IoT</strong> with <strong>Azure/Tencent Cloud</strong> to offload computation for low-latency mobile interaction.",
         "Won <strong>First Prize</strong> in the 11th National Mobile Internet Innovation Competition and <strong>First Place</strong> in the Beijing College Students' Innovation Competition. Co-founded <strong>Beijing Zhiban Intelligent Technology Co., Ltd.</strong> and featured at the 15th National Undergraduate Innovation Conference.",

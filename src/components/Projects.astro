@@ -39,11 +39,11 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                           </h3>
                         </div>
 
-                        {project.descriptionParagraphs ? (
+                        {project.description ? (
                           <div
                             class={`space-y-3 text-base sm:text-lg text-gray-600 leading-relaxed ${project.link ? "pr-12 sm:pr-14 md:pr-16" : ""}`}
                           >
-                            {project.descriptionParagraphs.map((paragraph) => (
+                            {project.description.map((paragraph) => (
                               <p set:html={paragraph} />
                             ))}
                           </div>
