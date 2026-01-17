@@ -134,11 +134,22 @@ export const siteConfig = {
       name: "Dr. Aditya Joshi",
       affiliation: "University of New South Wales",
       email: "aditya.joshi@unsw.edu.au",
+      linkedin: "https://www.linkedin.com/in/aditya-joshi-phd/",
+      avatar: "https://media.licdn.com/dms/image/v2/D5603AQFFbk1pKin4aQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724710792654?e=1770249600&v=beta&t=vb89PvVvNOyf6rL6KzCzCtO9G4fY6IHfxjIBhqkMsAQ",
     },
     {
       name: "Dr. Xiang Dai",
       affiliation: "CSIRO Data61",
       email: "dai.dai@data61.csiro.au",
+      linkedin: "https://www.linkedin.com/in/xiang-dai-427a4310a/",
+      avatar: "https://media.licdn.com/dms/image/v2/C5603AQEnRXZlzil0cQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1520204806951?e=1770249600&v=beta&t=9VE7yU-EZke-TOXiaf6_iUmdLFyFFfgVXeSUEYdbDfc",
+    },
+     {
+      name: "Moses Savea",
+      affiliation: "Mise Systems",
+      email: "saveamoses@gmail.com",
+      linkedin: "https://www.linkedin.com/in/moses-savea-65552524a/",
+      avatar: "https://media.licdn.com/dms/image/v2/D5635AQGh0Me_ugzt5w/profile-framedphoto-shrink_800_800/B56ZWsjZFeGUAo-/0/1742356714135?e=1769223600&v=beta&t=vAscZnQUXJYEP87jqJK8-rCIabNyx7GWvZKXcj6oggI",
     },
   ],
 };
