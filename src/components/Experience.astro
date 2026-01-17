@@ -52,16 +52,13 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
                       </span>
                     </div>
 
-                    <ul class="space-y-2">
-                      {exp.bullets.map((bullet) => (
-                        <li class="flex items-start">
-                          <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0" />
-                          <span class="text-sm sm:text-base text-gray-600">
-                            {bullet}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
+                    {exp.description && (
+                      <div class="mb-4 space-y-3 text-sm sm:text-base text-gray-600 leading-relaxed">
+                        {exp.description.map((paragraph) => (
+                          <p set:html={paragraph} />
+                        ))}
+                      </div>
+                    )}
 
                     {exp.images && exp.images.length > 0 && (
                       <div class="mt-5 grid grid-cols-3 gap-3 sm:gap-4">

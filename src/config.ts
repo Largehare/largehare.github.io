@@ -3,7 +3,7 @@ export const siteConfig = {
   title: "AI Researcher & Full Stack Engineer",
   description: "Master of IT Graduate (UNSW) and Software Engineer with 3 years of experience across AI research and commercial development.",
   accentColor: "#1d4ed8",
-  linkUnavailableText: "Not available (NDA)",
+  linkUnavailableText:  "Not available publicly",
   social: {
     email: "rexincheng@outlook.com",
     linkedin: "https://www.linkedin.com/in/rexin-cheng",
@@ -15,15 +15,16 @@ export const siteConfig = {
     "Python",
     "Swift",
     "C/C++",
-    "JavaScript",
     "PyTorch",
     "TensorFlow",
     "Flask",
-    "Django",
+    "RAG",
+    "LLMs",
+    "MLOps",
+    "CI/CD",
     "React",
-    "Docker",
     "Kubernetes",
-    "PostgreSQL",
+    "SQL",
     "..."
   ],
 
@@ -32,31 +33,32 @@ export const siteConfig = {
       company: "MISE SYSTEMS PTY LTD",
       title: "Full-Stack Software Engineer",
       dateRange: "May 2025 - Present",
-      bullets: [
+      description: [
         "Led full-stack development of a service marketplace (Python/Flask, Swift), integrating AI-driven features like Semantic Search and RAG.",
         "Executed cloud migration from Azure to DigitalOcean, reducing infrastructure costs by 60%+ via optimized Docker/Kubernetes strategies.",
         "Engineered scalable backend systems handling Stripe payments and real-time data.",
         "Established automated CI/CD pipelines with Helm, reducing deployment time by about 50%.",
       ],
+      linknote: "Not a",
       images: ["experience/mise1.png", "experience/mise2.png", "experience/mise3.png"],
     },
     {
       company: "Multimodal Art Projection Research Community",
       title: "Research Assistant",
       dateRange: "Sep 2023 - Jan 2024",
+      description: [
+        "Analog dynamic range compressors (DRCs) are essential in audio production but challenging to simulate digitally because they operate nonlinearly over long time scales. Prior deep learning models often suffered from artifacts, high parameter counts, or non-causal architectures that prevented real-time use.",
+        "As a core researcher and co-author, I helped develop a realistic digital model of the <strong>Teletronix LA-2A</strong> with a causal, parameter-efficient design for real-time CPU performance. I implemented evaluation metrics (MAE, MSE, ESR+DC, multi-STFT, LUFS, FAD), designed a <strong>webMUSHRA</strong> study (17 responses across 11 passages), and contributed to the <strong>S4/S4D</strong> state-space architecture and arXiv authorship.",
+        "The model achieves real-time inference on a single Apple M1 Max CPU core (buffer sizes >256 samples), matches or exceeds prior TCN/LSTM perceptual quality with a <strong>causal formulation</strong> and <strong>fewer parameters</strong> (8.2k–18.9k vs. 26k–51k), and shows no significant subjective difference from the analog reference.",
+      ],
       // linkNote: "Please refer to publications section",
       link: "https://arxiv.org/abs/2403.16331",
-      bullets: [
-        "Implemented data-testing metrics for Deep Learning models in audio processing.",
-        "Designed and distributed survey questionnaires to collect subjective data.",
-        "Authored and published findings on arXiv.",
-      ],
     },
     {
       company: "DiDi Global Inc.",
       title: "Algorithm Engineer",
       dateRange: "Mar 2023 - Oct 2023",
-      bullets: [
+      description: [
         "Analyzed occupant detection data using Deep Learning to improve accuracy by 10%.",
         "Automated parameter adjustments for an audio equalizer using TensorFlow and Python.",
         "Collaborated with cross-functional teams to streamline testing and visualize performance metrics.",
@@ -77,11 +79,15 @@ export const siteConfig = {
     },
     {
       name: "Metaverse Holographic AI Partner",
-      description:
-        "Led a team to develop a holographic AI app using Unity and Python. Gained rating as a 'national project' and chosen among the top 0.1% of projects at BUPT.",
+      descriptionParagraphs: [
+        "Developed a cross-platform holographic <strong>AI Partner</strong> to address the lack of emotional companionship in existing AI products by integrating 3D rendering with intelligent human-computer interaction. Served as the <strong>Software Development Lead</strong> at Beijing University of Posts and Telecommunications.",
+        "<strong>Unity System Integration</strong> and <strong>Real-time Action Recognition</strong>: built core modules (AI dressing system, motion-capture rhythm games) for Android/Web, and implemented a high-accuracy engine using <strong>BlazePose + EfficientGCN</strong>, enabling <strong>CPU-side</strong> real-time detection of <strong>20+ daily gestures</strong>. Integrated <strong>JD IoT</strong> with <strong>Azure/Tencent Cloud</strong> to offload computation for low-latency mobile interaction.",
+        "Won <strong>First Prize</strong> in the 11th National Mobile Internet Innovation Competition and <strong>First Place</strong> in the Beijing College Students' Innovation Competition. Co-founded <strong>Beijing Zhiban Intelligent Technology Co., Ltd.</strong> and featured at the 15th National Undergraduate Innovation Conference.",
+      ],
       skills: ["Unity", "C#", "Python", "Computer Vision"],
       images: ["projects/metaverse1.jpg", "projects/metaverse2.jpg", "projects/metaverse3.png"],
-      linkNote: "Internal codebase",
+      // linkNote: "Internal codebase",
+      link: "https://www.dropbox.com/scl/fi/ddu07d8g9sekk2xorxp3f/metaverse-ppt.pdf?rlkey=9mibrzi28npzai4kp53ijo3pt&st=jjflcec6&dl=0",
     },
   ],
   publications: [
@@ -89,7 +95,7 @@ export const siteConfig = {
       title: "Modeling Analog Dynamic Range Compressors using Deep Learning and State-space Models",
       authors: "Yin, H.; Cheng, G. (Rexin); Steinmetz, C.J.; Yuan, R.; Stern, R.M.; Dannenberg, R.B.",
       venue: "arXiv, 2024",
-      link: "https://arxiv.org/abs/2403.16331",
+      link: "https://arxiv.org/pdf/2403.16331",
       images: ["pubs/model.png", "pubs/speed-ratio.png", "pubs/subjective.png"],
     },
     {
@@ -118,8 +124,9 @@ export const siteConfig = {
       achievements: [
         "WAM: 87.5/100",
         "National Scholarship",
-        "Selected for 15th National College Students Innovation & Entrepreneurship Annual Conference (Top 0.1%)",
       ],
+      description:
+        "BUPT is a premier university specialising in IT, whose graduates are highly sought after by major US (eg. Google, Microsoft, Amazon, Apple) and Chinese companies (eg. Bytedance, Alibaba, Tencent). Surveys by LinkedIn ranked BUPT among the Top 6 Chinese universities based on the number of alumni working in those companies.",
     },
   ],
   referees: [
@@ -131,7 +138,7 @@ export const siteConfig = {
     {
       name: "Dr. Xiang Dai",
       affiliation: "CSIRO Data61",
-      email: "dai.xiang.au@gmail.com",
+      email: "dai.dai@data61.csiro.au",
     },
   ],
 };
