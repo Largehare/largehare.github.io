@@ -34,10 +34,9 @@ export const siteConfig = {
       title: "Full-Stack Software Engineer",
       dateRange: "May 2025 - Present",
       description: [
-        "Led full-stack development of a service marketplace (Python/Flask, Swift), integrating AI-driven features like Semantic Search and RAG.",
-        "Executed cloud migration from Azure to DigitalOcean, reducing infrastructure costs by 60%+ via optimized Docker/Kubernetes strategies.",
-        "Engineered scalable backend systems handling Stripe payments and real-time data.",
-        "Established automated CI/CD pipelines with Helm, reducing deployment time by about 50%.",
+        "Modernized a service marketplace facing <strong>bot abuse</strong> on <strong>authentication/verification</strong> flows and high infrastructure costs.",
+        "Led full-stack delivery across backend (<strong>Python/Flask</strong>) and iOS (<strong>Swift</strong>), building AI-driven <strong>Semantic Search</strong>/<strong>RAG</strong> and map discovery (<strong>GMSMapView</strong>). Orchestrated <strong>Azure</strong> → <strong>DigitalOcean Kubernetes</strong> migration and <strong>Helm</strong>-based <strong>CI/CD</strong>, and shipped a secure <strong>Stripe</strong> payments stack plus multi-layer bot protection (<strong>Firebase App Check</strong> + <strong>reCAPTCHA</strong>).",
+        "Eliminated automated authentication abuse (0 reported verification incidents), reduced infrastructure costs by <strong>60%+</strong>, and cut deployment time by <strong>~50%</strong> across <strong>160+ commits</strong>.",
       ],
       linknote: "Not a",
       images: ["experience/mise1.png", "experience/mise2.png", "experience/mise3.png"],
