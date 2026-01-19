@@ -24,14 +24,30 @@ const hasReferees = siteConfig.referees && siteConfig.referees.length > 0;
                 <div class="block p-4 sm:p-5 md:p-6 bg-gray-50 rounded-xl border border-gray-200 transition-all duration-300 hover:bg-white hover:shadow-lg hover:border-gray-300">
                   <div class="space-y-2">
                     <div class="flex items-center gap-3">
-                      {referee.avatar && (
-                        <img
-                          src={referee.avatar}
-                          alt={`${referee.name} avatar`}
-                          class="h-12 w-12 rounded-full object-cover border border-gray-200"
-                          loading="lazy"
-                        />
-                      )}
+                      {referee.avatar &&
+                        (referee.linkedin ? (
+                          <a
+                            href={referee.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`${referee.name} LinkedIn`}
+                            class="hover:opacity-90"
+                          >
+                            <img
+                              src={referee.avatar}
+                              alt={`${referee.name} avatar`}
+                              class="h-12 w-12 rounded-full object-cover border border-gray-200"
+                              loading="lazy"
+                            />
+                          </a>
+                        ) : (
+                          <img
+                            src={referee.avatar}
+                            alt={`${referee.name} avatar`}
+                            class="h-12 w-12 rounded-full object-cover border border-gray-200"
+                            loading="lazy"
+                          />
+                        ))}
                       <h3 class="text-lg sm:text-xl font-semibold text-gray-900">
                         {referee.linkedin ? (
                           <a
