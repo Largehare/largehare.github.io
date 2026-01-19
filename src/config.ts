@@ -10,7 +10,7 @@ export const siteConfig = {
     github: "https://github.com/Largehare",
   },
   aboutMe:
-    "Master of IT Graduate from UNSW Sydney and Software Engineer with 3 years of experience across AI research and commercial development. My expertise spans Machine Learning (LLM/NLP), Full-Stack Engineering (Python/Swift), and DevOps (Docker/Azure). I have a demonstrated ability to bridge the gap between complex AI research and production-ready software solutions in fast-paced environments like Didi and Mise Systems.",
+    "My background across AI research and full-stack engineering has shaped how I build: start from first principles, measure what matters, and ship systems that work in the real world. I’m currently completing a Master of Information Technology (AI) at UNSW Sydney and have 3 years of experience spanning research prototypes and production software.\n\nI’m especially drawn to problems at the intersection of language and product—LLMs/NLP, semantic search, and retrieval-augmented generation—where good results depend on both model quality and thoughtful system design. From data and evaluation to APIs and UI, I like owning the end-to-end path that turns an idea into something users can trust.\n\nPreviously, I’ve worked in fast-paced teams (including DiDi and MISE Systems), delivering AI-driven features, scalable backends, and cloud infrastructure improvements. I enjoy collaborating across disciplines and translating complex technical work into clear outcomes.",
   skills: [
     "Python",
     "Swift",

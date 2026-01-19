@@ -1,5 +1,10 @@
 ---
 import { siteConfig } from "../config";
+
+const aboutParagraphs = siteConfig.aboutMe
+  .split(/\n\s*\n/)
+  .map((p) => p.trim())
+  .filter(Boolean);
 ---
 
 <section id="about" class="p-8 sm:p-12 md:p-16 lg:p-24">
@@ -19,9 +24,13 @@ import { siteConfig } from "../config";
       </div>
 
       <div class="lg:col-span-8 space-y-8">
-        <p class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600">
-          {siteConfig.aboutMe}
-        </p>
+        {
+          aboutParagraphs.map((paragraph) => (
+            <p class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600">
+              {paragraph}
+            </p>
+          ))
+        }
 
         <div class="pt-4">
           <div class="flex flex-wrap gap-3">
