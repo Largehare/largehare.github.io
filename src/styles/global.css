@@ -4,6 +4,10 @@ body {
   font-family: 'IBM Plex Mono', monospace;
 }
 
+.emoji {
+  font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
+}
+
 .img-skeleton {
   position: relative;
   overflow: hidden;
