@@ -130,6 +130,38 @@ export const siteConfig = {
         "BUPT is a premier university specialising in IT, whose graduates are highly sought after by major US (eg. Google, Microsoft, Amazon, Apple) and Chinese companies (eg. Bytedance, Alibaba, Tencent). Surveys by LinkedIn ranked BUPT among the Top 6 Chinese universities based on the number of alumni working in those companies.",
     },
   ],
+  honors: [
+    {
+      title: "National Scholarship",
+      // association: "BUPT",
+      date: "Oct 2022",
+      description: "The most prestigious academic honor awarded by the Ministry of Education to the top 0.2% of university students nationwide for exceptional academic and research performance.",
+    },
+    {
+      title: "National College Students Innovation & Entrepreneurship Annual Conference",
+      // association: "BUPT",
+      date: "Oct 2022",
+      description: "Represented BUPT at China's premier showcase for undergraduate research with the project \"Zhiban: Metaverse Holographic AI Partner,\" selected as one of the top innovative projects in the country.",
+    },
+    {
+      title: "Second Prize, 8th \"Internet+\" Innovation & Entrepreneurship Competition (Beijing Division)",
+      // association: "BUPT",
+      date: "Aug 2022",
+      description: "Recognized for business viability and technical innovation in the world's largest student startup competition, outperforming thousands of projects in the competitive Beijing hub.",
+    },
+    {
+      title: "Third Prize, Beijing College Students Animation Design Competition (Interactive Works)",
+      // association: "BUPT",
+      date: "Oct 2021",
+      description: "Awarded for excellence in UI/UX and interactive storytelling, specifically for the creative application of technology in digital media.",
+    },
+    {
+      title: "University First-Class Scholarship",
+      // association: "BUPT",
+      date: "Oct 2021",
+      description: "Awarded for maintaining a top-tier GPA and demonstrating leadership within the academic year at BUPT.",
+    },
+  ],
   referees: [
     {
       name: "Dr. Aditya Joshi",
@@ -150,7 +182,7 @@ export const siteConfig = {
       affiliation: "Mise Systems",
       email: "saveamoses@gmail.com",
       linkedin: "https://www.linkedin.com/in/moses-savea-65552524a/",
-      avatar: "https://media.licdn.com/dms/image/v2/D5635AQGh0Me_ugzt5w/profile-framedphoto-shrink_800_800/B56ZWsjZFeGUAo-/0/1742356714135?e=1769223600&v=beta&t=vAscZnQUXJYEP87jqJK8-rCIabNyx7GWvZKXcj6oggI",
+      avatar: "https://media.licdn.com/dms/image/v2/D5635AQGh0Me_ugzt5w/profile-framedphoto-shrink_800_800/B56ZWsjZFeGUAo-/0/1742356714135?e=1769936400&v=beta&t=iNYVPdQEIJjmn4H7x6yX2WFH3LJ_7nRLtk58W41O9po",
     },
   ],
 };

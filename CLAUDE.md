@@ -25,7 +25,7 @@ npm run preview   # Preview production build
 
 The project follows a component-based architecture with all customization centralized in `src/config.ts`:
 
-- **Components** (`src/components/`): Individual Astro components for each section (Hero, About, Projects, Experience, Education, Header, Footer)
+- **Components** (`src/components/`): Individual Astro components for each section (Hero, About, Projects, Publications, Experience, Education, Honors, Referees, Header, Footer, Lightbox)
 - **Main Layout** (`src/pages/index.astro`): Single-page layout that imports all components
 - **Configuration** (`src/config.ts`): Single source of truth for all content and customization
 
@@ -55,10 +55,24 @@ When modifying components:
 ## Configuration Structure
 
 The `src/config.ts` exports a `siteConfig` object with these sections:
-- Basic info: name, title, description, accentColor
-- Social links: email, linkedin, twitter, github (all optional)
+- Basic info: name, title, description, accentColor, linkUnavailableText
+- Social links: email, linkedin, github (all optional)
 - aboutMe: string
 - skills: string[]
-- projects: array of {name, description, link, skills}
-- experience: array of {company, title, dateRange, bullets}
-- education: array of {school, degree, dateRange, achievements}
+- projects: array of {name, description, link, linkNote, skills, images}
+- publications: array of {title, authors, venue, link, images}
+- experience: array of {company, title, dateRange, description, link, linkNote, images}
+- education: array of {school, degree, dateRange, achievements, description}
+- honors: array of {title, issuer, association, date, description}
+- referees: array of {name, affiliation, email, linkedin, avatar}
+
+## Deployment
+
+The site deploys automatically to GitHub Pages via GitHub Actions on push to `master`. The workflow is defined in `.github/workflows/deploy.yml` using the official Astro action.
+
+## Adding a New Section
+
+1. Create a new component in `src/components/`
+2. Add the corresponding data structure to `src/config.ts`
+3. Import and add the component to `src/pages/index.astro`
+4. Ensure it renders conditionally based on config data
