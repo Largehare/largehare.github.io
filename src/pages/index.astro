@@ -6,6 +6,7 @@ import Projects from "../components/Projects.astro";
 import Publications from "../components/Publications.astro";
 import Experience from "../components/Experience.astro";
 import Education from "../components/Education.astro";
+import Honors from "../components/Honors.astro";
 import Referees from "../components/Referees.astro";
 import Footer from "../components/Footer.astro";
 import Lightbox from "../components/Lightbox.astro";
@@ -37,10 +38,36 @@ import "../styles/global.css";
       <Projects />
       <Publications />
       <Education />
+      <Honors />
       <Referees />
     </section>
     <Lightbox />
     <Footer />
+
+    <!-- Go to Top Button -->
+    <button
+      id="go-to-top"
+      class="fixed bottom-6 right-6 w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300 hover:scale-110 z-50"
+      style={`background-color: ${siteConfig.accentColor}`}
+      aria-label="Go to top"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 5l0 14" />
+        <path d="M18 11l-6 -6" />
+        <path d="M6 11l6 -6" />
+      </svg>
+    </button>
+
     <script is:inline>
       const setupImageSkeletons = () => {
         const images = document.querySelectorAll(".img-skeleton img");
@@ -65,6 +92,24 @@ import "../styles/global.css";
         document.addEventListener("DOMContentLoaded", setupImageSkeletons);
       } else {
         setupImageSkeletons();
+      }
+
+      // Go to Top button
+      const goToTopBtn = document.getElementById("go-to-top");
+      if (goToTopBtn) {
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 300) {
+            goToTopBtn.classList.remove("opacity-0", "invisible");
+            goToTopBtn.classList.add("opacity-100", "visible");
+          } else {
+            goToTopBtn.classList.add("opacity-0", "invisible");
+            goToTopBtn.classList.remove("opacity-100", "visible");
+          }
+        });
+
+        goToTopBtn.addEventListener("click", () => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
       }
     </script>
   </body>
