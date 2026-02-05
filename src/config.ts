@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Rexin Cheng",
   title: "AI Researcher & Full Stack Engineer",
-  description: "Master of IT Graduate (UNSW) and Software Engineer with 3 years of experience across AI research and commercial development.",
+  description: "Master of IT Graduate (UNSW) and Software Engineer across AI research and commercial development.",
   accentColor: "#1d4ed8",
   linkUnavailableText:  "Not available publicly",
   social: {
@@ -10,7 +10,7 @@ export const siteConfig = {
     github: "https://github.com/Largehare",
   },
   aboutMe:
-    "My background across AI research and full-stack engineering has shaped how I build: start from first principles, measure what matters, and ship systems that work in the real world. I’m currently completing a Master of Information Technology (AI) at UNSW Sydney and have 3 years of experience spanning research prototypes and production software.\n\nI’m especially drawn to problems at the intersection of language and product—LLMs/NLP, semantic search, and retrieval-augmented generation—where good results depend on both model quality and thoughtful system design. From data and evaluation to APIs and UI, I like owning the end-to-end path that turns an idea into something users can trust.\n\nPreviously, I’ve worked in fast-paced teams (including DiDi and MISE Systems), delivering AI-driven features, scalable backends, and cloud infrastructure improvements. I enjoy collaborating across disciplines and translating complex technical work into clear outcomes.",
+    "My background across AI research and full-stack engineering has shaped how I build: start from first principles, measure what matters, and ship systems that work in the real world. I’m currently completing a Master of Information Technology (AI) at UNSW Sydney and have hands-on experience spanning research prototypes and production software.\n\nI’m especially drawn to problems at the intersection of language and product—LLMs/NLP, semantic search, and retrieval-augmented generation—where good results depend on both model quality and thoughtful system design. From data and evaluation to APIs and UI, I like owning the end-to-end path that turns an idea into something users can trust.\n\nPreviously, I’ve worked in fast-paced teams (including DiDi and MISE Systems), delivering AI-driven features, scalable backends, and cloud infrastructure improvements. I enjoy collaborating across disciplines and translating complex technical work into clear outcomes.",
   skills: [
     "Python",
     "Swift",
@@ -32,7 +32,7 @@ export const siteConfig = {
     {
       company: "MISE SYSTEMS PTY LTD",
       title: "Full-Stack Software Engineer",
-      dateRange: "May 2025 - Present",
+      dateRange: "Mar 2025 - Present",
       description: [
         "Modernized a service marketplace facing <strong>bot abuse</strong> on <strong>authentication/verification</strong> flows and high infrastructure costs.",
         "Led full-stack delivery across backend (<strong>Python/Flask</strong>) and iOS (<strong>Swift</strong>), building AI-driven <strong>Semantic Search</strong>/<strong>RAG</strong> and map discovery (<strong>GMSMapView</strong>). Orchestrated <strong>Azure</strong> → <strong>DigitalOcean Kubernetes</strong> migration and <strong>Helm</strong>-based <strong>CI/CD</strong>, and shipped a secure <strong>Stripe</strong> payments stack plus multi-layer bot protection (<strong>Firebase App Check</strong> + <strong>reCAPTCHA</strong>).",
@@ -130,6 +130,38 @@ export const siteConfig = {
         "BUPT is a premier university specialising in IT, whose graduates are highly sought after by major US (eg. Google, Microsoft, Amazon, Apple) and Chinese companies (eg. Bytedance, Alibaba, Tencent). Surveys by LinkedIn ranked BUPT among the Top 6 Chinese universities based on the number of alumni working in those companies.",
     },
   ],
+  honors: [
+    {
+      title: "National Scholarship",
+      // association: "BUPT",
+      date: "Oct 2022",
+      description: "The most prestigious academic honor awarded by the Ministry of Education to the top 0.2% of university students nationwide for exceptional academic and research performance.",
+    },
+    {
+      title: "National College Students Innovation & Entrepreneurship Annual Conference",
+      // association: "BUPT",
+      date: "Oct 2022",
+      description: "Represented BUPT at China's premier showcase for undergraduate research with the project \"Zhiban: Metaverse Holographic AI Partner,\" selected as one of the top innovative projects in the country.",
+    },
+    {
+      title: "Second Prize, 8th \"Internet+\" Innovation & Entrepreneurship Competition (Beijing Division)",
+      // association: "BUPT",
+      date: "Aug 2022",
+      description: "Recognized for business viability and technical innovation in the world's largest student startup competition, outperforming thousands of projects in the competitive Beijing hub.",
+    },
+    {
+      title: "Third Prize, Beijing College Students Animation Design Competition (Interactive Works)",
+      // association: "BUPT",
+      date: "Oct 2021",
+      description: "Awarded for excellence in UI/UX and interactive storytelling, specifically for the creative application of technology in digital media.",
+    },
+    {
+      title: "University First-Class Scholarship",
+      // association: "BUPT",
+      date: "Oct 2021",
+      description: "Awarded for maintaining a top-tier GPA and demonstrating leadership within the academic year at BUPT.",
+    },
+  ],
   referees: [
     {
       name: "Dr. Aditya Joshi",
@@ -150,7 +182,7 @@ export const siteConfig = {
       affiliation: "Mise Systems",
       email: "saveamoses@gmail.com",
       linkedin: "https://www.linkedin.com/in/moses-savea-65552524a/",
-      avatar: "https://media.licdn.com/dms/image/v2/D5635AQGh0Me_ugzt5w/profile-framedphoto-shrink_800_800/B56ZWsjZFeGUAo-/0/1742356714135?e=1769223600&v=beta&t=vAscZnQUXJYEP87jqJK8-rCIabNyx7GWvZKXcj6oggI",
+      avatar: "https://media.licdn.com/dms/image/v2/D5635AQGh0Me_ugzt5w/profile-framedphoto-shrink_800_800/B56ZWsjZFeGUAo-/0/1742356714135?e=1769936400&v=beta&t=iNYVPdQEIJjmn4H7x6yX2WFH3LJ_7nRLtk58W41O9po",
     },
   ],
 };
