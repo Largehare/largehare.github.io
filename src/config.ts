@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Rexin Cheng",
-  title: "AI Researcher & Full Stack Engineer",
+  title: "Software & AI Engineer",
   description: "Master of IT Graduate (UNSW) and Software Engineer across AI research and commercial development.",
   accentColor: "#1d4ed8",
   linkUnavailableText:  "Not available publicly",
@@ -34,12 +34,12 @@ export const siteConfig = {
       title: "Full-Stack Software Engineer",
       dateRange: "Mar 2025 - Present",
       description: [
-        "Modernized a service marketplace facing <strong>bot abuse</strong> on <strong>authentication/verification</strong> flows and high infrastructure costs.",
+        "Modernized a multi-sided booking ecosystem facing <strong>bot abuse</strong> on <strong>authentication/verification</strong> flows and high infrastructure costs.",
         "Led full-stack delivery across backend (<strong>Python/Flask</strong>) and iOS (<strong>Swift</strong>), building AI-driven <strong>Semantic Search</strong>/<strong>RAG</strong> and map discovery (<strong>GMSMapView</strong>). Orchestrated <strong>Azure</strong> → <strong>DigitalOcean Kubernetes</strong> migration and <strong>Helm</strong>-based <strong>CI/CD</strong>, and shipped a secure <strong>Stripe</strong> payments stack plus multi-layer bot protection (<strong>Firebase App Check</strong> + <strong>reCAPTCHA</strong>).",
         "Eliminated automated authentication abuse (0 reported verification incidents), reduced infrastructure costs by <strong>60%+</strong>, and cut deployment time by <strong>~50%</strong> across <strong>160+ commits</strong>.",
       ],
       linknote: "Not a",
-      images: ["experience/mise1.png", "experience/mise2.png", "experience/mise3.png"],
+      images: ["experience/mise4.png", "experience/mise5.png", "experience/mise6.png"],
     },
     {
       company: "Multimodal Art Projection Research Community",
@@ -111,10 +111,10 @@ export const siteConfig = {
   education: [
     {
       school: "University of New South Wales",
-      degree: "Master of Information Technology (AI Major)",
+      degree: "Master of Information Technology (AI)",
       dateRange: "2024 - 2026",
       achievements: [
-        "Weighted Average Mark (WAM): 84.6/100",
+        "Weighted Average Mark (WAM): <strong>85/100 (High Distinction)</strong>",
         "Specialized in Deep Learning, Machine Learning and NLP",
       ],
     },
@@ -123,8 +123,8 @@ export const siteConfig = {
       degree: "Bachelor of Engineering (Digital Media Technology)",
       dateRange: "2019 - 2023",
       achievements: [
-        "WAM: 87.5/100",
-        "National Scholarship",
+        "WAM: <strong>88/100 (High Distinction)</strong>",
+        "<strong>National Scholarship</strong>",
       ],
       description:
         "BUPT is a premier university specialising in IT, whose graduates are highly sought after by major US (eg. Google, Microsoft, Amazon, Apple) and Chinese companies (eg. Bytedance, Alibaba, Tencent). Surveys by LinkedIn ranked BUPT among the Top 6 Chinese universities based on the number of alumni working in those companies.",
@@ -168,21 +168,21 @@ export const siteConfig = {
       affiliation: "University of New South Wales",
       email: "aditya.joshi@unsw.edu.au",
       linkedin: "https://www.linkedin.com/in/aditya-joshi-phd/",
-      avatar: "https://media.licdn.com/dms/image/v2/D5603AQFFbk1pKin4aQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724710792654?e=1770249600&v=beta&t=vb89PvVvNOyf6rL6KzCzCtO9G4fY6IHfxjIBhqkMsAQ",
+      avatar: "referees/aditya.jpg",
     },
     {
       name: "Dr. Xiang Dai",
       affiliation: "CSIRO Data61",
       email: "dai.dai@data61.csiro.au",
       linkedin: "https://www.linkedin.com/in/xiang-dai-427a4310a/",
-      avatar: "https://media.licdn.com/dms/image/v2/C5603AQEnRXZlzil0cQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1520204806951?e=1770249600&v=beta&t=9VE7yU-EZke-TOXiaf6_iUmdLFyFFfgVXeSUEYdbDfc",
+      avatar: "referees/dai.jpg",
     },
      {
       name: "Moses Savea",
       affiliation: "Mise Systems",
       email: "saveamoses@gmail.com",
       linkedin: "https://www.linkedin.com/in/moses-savea-65552524a/",
-      avatar: "https://media.licdn.com/dms/image/v2/D5635AQGh0Me_ugzt5w/profile-framedphoto-shrink_800_800/B56ZWsjZFeGUAo-/0/1742356714135?e=1769936400&v=beta&t=iNYVPdQEIJjmn4H7x6yX2WFH3LJ_7nRLtk58W41O9po",
+      avatar: "referees/moses.jpg",
     },
   ],
 };
