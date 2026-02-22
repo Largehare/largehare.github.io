@@ -39,6 +39,7 @@ export const siteConfig = {
         "Eliminated automated authentication abuse (0 reported verification incidents), reduced infrastructure costs by <strong>60%+</strong>, and cut deployment time by <strong>~50%</strong> across <strong>160+ commits</strong>.",
       ],
       linknote: "Not a",
+      link: "https://incredible-status-493721.framer.app/",
       images: ["experience/mise4.png", "experience/mise5.png", "experience/mise6.png"],
     },
     {
