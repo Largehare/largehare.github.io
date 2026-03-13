@@ -61,7 +61,7 @@ export const siteConfig = {
       description: [
         "Worked in automotive audio & AI to improve in-cabin acoustics and <strong>occupant monitoring</strong> under challenging vehicle conditions. ",
         "Built a differentiable <strong>deep-learning equalization</strong> pipeline (TensorFlow/Python) to optimize IIR filters, and developed STFT-based <strong>occupant detection & localization</strong> with clustering for seat/zone estimation.",
-        "Delivered <strong>+10% occupancy accuracy</strong> and near-flat response in test cabins, contributing to a <strong>patent audio framework</strong> and smoother cross-team validation.",
+        "Delivered <strong>+10% occupancy accuracy</strong> and <a href='https://arxiv.org/abs/2110.02077' target='_blank' rel='noopener noreferrer' class='underline'>near-flat response in test cabins</a>, contributing to a <strong>patent audio framework</strong> and smoother cross-team validation.",
       ],
       images: ["experience/my-didi.jpeg", "experience/didi1.jpeg" , "experience/didi2.jpeg" ],
     },
